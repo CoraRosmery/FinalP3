@@ -1,0 +1,577 @@
+/******* 
+Colores y tipografía 
+ *******/
+:root {
+   --text-color: rgb(0, 59, 74);
+   --text-color-a: rgb(255, 255, 255);
+   --contrast-color: rgb(191, 12, 240);
+   --contrast-color-a: rgb(229, 225, 254);
+   --body-color: rgb(247, 247, 247);
+   --gris-text: rgb(158, 157, 171);
+
+   --Lato-400:'Lato', sans-serif;
+   --Lato-700:'Lato', sans-serif;
+   --Lato-900:'Lato', sans-serif;
+   --Noto-Serif: (600);
+}
+
+/****************************
+Estilos generales
+*****************************/ 
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Lato';
+   font-weight: 400;
+   color: var(--text-color);
+   line-height: 1.5;
+   background-color: var(--body-color);
+   min-height: 100vh;
+}
+h1 {
+   font-size: 3rem;
+   line-height: 1;
+
+}
+h2{
+   font-size: 150%;
+}
+h3{
+   font-size: 1.8rem;
+}
+a {
+   color: var(--text-color);
+   text-decoration: none;
+}
+img{
+   width: 100%;
+}
+.bg-contrast{
+   background-color: var(--contrast-color-a);
+}
+.border-right{
+   border-right: 1px solid black;
+}
+button {
+   background-color: var(--text-color);
+   color: var(--text-color-a);
+   padding: 10px 15px;
+   border: none;
+   cursor: pointer; 
+}
+button:hover{
+   background-color: rgb(191, 12, 240);
+}
+
+/*Espacio para el header*/
+.blog, .videos, .entrada{
+   margin-top: 80px;
+}
+/****************************
+Header
+*****************************/ 
+.container_n_f{
+   width: 95%;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   margin: auto;
+}
+/******* Reglas menú de navegación  *******/
+.menu{
+   background-color: white;
+   position: fixed;
+   top: 0;
+   z-index: 5;
+   width: 100%;
+   height: 80px;
+
+   display: flex;
+   align-items: center;
+}
+.menu a{
+   width: 8rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.menu img{
+   width: 100%;
+}
+.menu ul {
+   display: flex;
+   list-style: none;
+   justify-content: space-between;
+}
+.menu ul li{
+   padding: 0 1rem;
+}
+nav ul a{
+   text-decoration: none;
+   color: var(--text-color);
+   text-align: end;
+   font-weight: 700;
+   font-size: 1rem;
+}
+.img-prin{
+   margin-top: 80px;
+   width: 100%;
+   height: 330px;
+   background: url("/img/hero-image-home.jpg") no-repeat 50% 50%;
+   display: flex;
+}
+.container1{
+   width: 90%;
+   margin: auto;
+   padding: 3rem 0;
+}
+.container3{
+   margin: auto;
+   border: solid 1px red;
+}
+
+/****************************
+Index & entradas
+*****************************/
+#miLista {
+   list-style: none;
+}
+input {
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 15px;
+   box-sizing: border-box; 
+}
+.check{
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: start;
+   align-items: center;
+   margin: 1rem 0;
+}
+.check input{
+   width: 1rem;
+   height: 1rem;
+   margin: 0;
+   margin-right: 1rem;
+}
+/*Segunda sección*/
+.articles article{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-bottom: 3rem;
+}
+.articles article figure figcaption{
+   width: 100%;
+   text-align: right;
+   font-size: 0.6rem;
+}
+/*Entrada*/
+.post{
+   display: flex;
+   flex-direction: column;
+}
+.into{
+   background-color: var(--contrast-color-a); 
+   margin-bottom: 3rem;
+   }
+.post article{
+   background-color:var(--text-color-a);
+}
+.bg{
+   background-color:var(--text-color-a);
+   padding: 1rem;
+}
+.tema{
+   padding: 0.5rem;
+}
+.tema figcaption{
+   color: var(--gris-text);
+}
+.tema strong{
+   color: var(--text-color);
+}
+.legend{
+
+   font-family: var(--Lato-700);
+   text-align: left;
+   line-height: 2.3rem;
+   font-size: 1.6rem;
+   margin-bottom: 3rem;
+}
+.margin{
+   margin-bottom: 10px;
+}
+.size{
+   padding: 0.3rem;
+}
+.links_entrada:hover{
+   color: var(--contrast-color)
+}
+blockquote {
+
+   border-left: 4px solid var(--contrast-color);
+   padding-left: 10%;
+}
+.breadcrumb_section{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 80px;
+}
+.breadcrumb_sizeBox{
+   width: 96%;
+   max-width: 1130px;
+}
+.breadcrumb{
+   display: flex;
+   align-items: center;
+   padding: 0.5rem;
+   margin: 0;
+}
+.breadcrumb li{
+   display: flex;
+   align-items: center;
+   padding: 0;
+   font-size: 0.9rem;
+   margin-right: 0.5em;
+}
+.breadcrumb li a{
+   padding: 0;
+}
+.breadcrumb p{
+   margin:0% 1% 0% 1%;
+}
+.categorias{
+   margin: 0.3rem;
+   font-size: smaller;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
+}
+.categorias li{
+   list-style: none;
+   border: solid 1px var(--text-color);
+   padding: 0.3rem;
+}
+/*Blog and videos*/
+
+/*blog*/
+.blog{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+.blog-cards-container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.blog-cards-container article{
+   background-color: white;
+   width: 95%;
+   margin-bottom: 3rem;
+}
+.blog-cards-container div{
+   padding: 0.5rem;
+}
+.blog h1{
+   width: 100%;
+   font-weight: 900;
+   margin: 2rem 1rem;
+}
+.tag{
+   position: absolute;
+   background-color: var(--text-color);
+   padding: 0.3rem;
+   margin: 0.3rem;
+   font-size: smaller;
+}
+.tag a{
+   color: var(--text-color-a);
+}
+
+.blog-cards-container figcaption{
+   position: relative;
+   bottom: 40px;
+   background-color: white;
+   opacity: 60%;
+   float: right;
+   padding: 3px;
+   margin-right: 2%;
+   font-size: 0.8rem;
+   text-align: right; 
+}
+.author{
+   color: var(--gris-text);
+   font-size: 0.9rem;
+}
+.info{
+   color: var(--contrast-color);
+   text-decoration-line: underline;
+}
+.pagination-buttons{
+   margin-bottom: 3rem;
+}
+.pagination-buttons button{
+   background-color: white;
+   border: 1px solid var(--text-color);
+   color: var(--text-color);
+}
+.pagination-buttons button:hover{
+   background-color:var(--contrast-color);
+}
+/*Videos*/
+.container2{
+   width: 95%;
+}
+.videos h1{
+   margin-top: 6rem;
+   margin-bottom: 3rem;
+}
+.videos section{
+   margin: auto;
+}
+.videos article{
+   background-color: var(--text-color-a);
+   margin-bottom: 3rem;
+}
+.videos article figure{
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   padding-top: 56.25%;
+}
+.video-fluid{
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+}
+.info_video{
+   padding: 1rem;
+   text-align: left;
+   width: 90%;
+}
+.info_video h2{
+   font-weight: 900;
+}
+
+/*footer*/
+footer {
+   background-color: var(--text-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem 0 3rem 0;
+}
+.container_f{
+   width: 95%;
+   display: flex;
+   flex-direction: column;
+   justify-content:space-between;
+   align-items: center;
+   margin: auto;
+}
+footer p {
+   color: var(--text-color-a);
+   font-size: 0.8rem;
+}
+footer a{
+   color: var(--text-color-a);
+}
+footer a:hover{
+   color: var(--contrast-color-a)
+}
+.logo figure{
+   width: 5rem;
+}
+.logo, .footer_links, #legal{
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items:center;
+   margin-bottom: 1rem;
+}
+#sm{
+   width: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#sm a{
+   width: 30%;
+}
+
+/*QUERIES*/
+@media (min-width: 576px ) {
+    .container1 {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+   /*Blog*/
+   .blog-cards-container{
+      justify-content:space-between;
+   }
+   .blog-cards-container article{
+      width: 45%;
+   }
+   /*Entrada*/
+   .post2{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+   }
+   .post2 h2{
+      width: 100%;
+      margin: 1rem;
+   } 
+   .post2 article{
+      width: 30%;
+   } 
+   /*Videos*/
+   .videos section{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   .videos h1{
+      width: 100%;
+      margin-top: 2rem;
+   }
+   .videos article{
+      width: 45%;
+   }
+}
+/*media query para dispositivos móviles*/
+@media only screen and (max-width:600px){
+  .blog-cards-container{
+   width: 100%
+  }
+}
+@media (min-width: 992px) {
+   .container1 {
+      max-width: 900px;
+   }
+   .blog1, .blog2{
+      flex-direction: row;
+   }
+
+   /*footer*/
+   .container_f{
+      flex-direction: row;
+   }
+   footer p {
+      color: var(--text-color-a);
+      font-size: 0.8rem;
+   }
+
+   .logo, .footer_links, #legal{
+      margin-bottom: 0;
+   }
+   .logo{
+      align-items:start;
+   }
+   .footer_links{
+      align-items:end;
+   }
+   #legal{
+      justify-content: end;
+      flex-direction: row;
+      width: 30rem;
+   }
+   #legal a{
+      margin-left: 1rem;
+   }
+
+   /*Primera sección*/
+   .form{
+      display: flex;
+      justify-content: space-between;
+   }
+   .form .item{
+      width: 48%;
+   }
+   
+   /*Segunda sección*/
+   .articles{
+      display: flex;
+      flex-direction: column;
+   }
+   
+   .articles article{
+      flex-direction: row;
+      align-items: center;
+   }
+   .reverse{
+      flex-direction: row-reverse !important;
+   }
+   .articles article figure{
+      width: 35%;
+   }
+   .articles article figure img, .articles article figure figcaption{
+      transform: rotate(-5deg);
+   }
+   .articles article div{
+      width: 60%;
+   }
+
+   /*Blog*/
+   .blog-cards-container article{
+      width: 23%;
+   }
+
+   #first_article{
+      width: 48.5%;
+   }
+
+   /*Entrada*/
+   .post-content{
+      display: flex;
+   }
+   .post2{
+      display: flex;
+      flex-direction: column;
+      
+   } 
+   .post2 article{
+      width: 100%;
+      margin: 1rem;
+   } 
+   .bg{
+   width: 170%;
+
+      
+   }
+   /*Videos*/
+   .videos h1{
+      margin-top: 3rem;
+   }
+   .videos section{
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .videos article{
+      width: 30%;
+      margin-bottom: 2rem;
+   }
+}
+
+@media (min-width: 1200px) {
+  
+}
