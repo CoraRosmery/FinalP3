@@ -121,7 +121,7 @@ nav ul a{
    margin-top: 80px;
    width: 100%;
    height: 330px;
-   background: url("img/hero-image-home.jpg") no-repeat 50% 50%;
+   background: url("../img/hero-image-home.jpg") no-repeat 50% 50%;
    display: flex;
 }
 .container1{
